@@ -13,8 +13,8 @@ class App extends React.Component {
     return (!this.state) ? "loading" : (
       <div className="App">
         <header className="App-header">
-          <p>Audre Lorde versus Ayn Rand, à la GPT-2-XL + GeDi</p>
-          <p><a href="https://leebutterman.com/argle-bargle">by Lee Butterman</a></p>
+          <p>Audre Lorde versus Ayn Rand, à la GPT-2 + GeDi</p>
+          <p><a href="https://www.leebutterman.com/2020/11/01/lorde-versus-rand.html">by Lee Butterman</a></p>
           <form onSubmit={e => {this.setState({prompt: this.state.localprompt || "", apicall: true}); e.preventDefault()}} >
             <textarea value={this.state.localprompt} onChange={e => this.setState({localprompt: e.target.value})} />
             <br/>
