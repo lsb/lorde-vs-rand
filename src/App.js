@@ -7,7 +7,8 @@ const apicall = ({code, prompt}) => `${endpoint}?code=${code}&prompt=${prompt}`;
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {localprompt: "The aged can now get cash lump sums to walk in and be mulched into a fine nutrient slurry. I think"};
+    this.state = {localprompt: "It is indefensible that"}; // a la Lorde talks about equal pay for equal work, which she never discusses in the essay selection! and rand talks about cops, which she doesn't mention except obliquely!
+     // {localprompt: "The aged can now get cash lump sums to walk in and be mulched into a fine nutrient slurry. I think"};
   }
   render() {
     return (!this.state) ? "loading" : (
