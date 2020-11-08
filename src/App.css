@@ -15,14 +15,12 @@
 
 textarea, input {
   font-size: 0.25in;
-}
-
-textarea {
   width: 100%
 }
 
-form {
-  width: 50%
+form, .prompt {
+  min-width: 4in;
+  max-width: 75%;
 }
 
 iframe {
@@ -30,5 +28,5 @@ iframe {
 }
 
 .prompt {
-  width: 50vmin;
+  margin-top: 1em;
 }

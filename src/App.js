@@ -13,15 +13,14 @@ class App extends React.Component {
     return (!this.state) ? "loading" : (
       <div className="App">
         <header className="App-header">
-          <p>Audre Lorde versus Ayn Rand, à la GPT-2 + GeDi</p>
-          <p><a href="https://www.leebutterman.com/2020/11/01/lorde-versus-rand.html">by Lee Butterman</a></p>
+          <p>Audre Lorde vs Ayn Rand, via GPT-2 + GeDi<br/><a href="https://www.leebutterman.com/2020/11/01/lorde-versus-rand.html">by Lee Butterman</a></p>
           <form onSubmit={e => {this.setState({prompt: this.state.localprompt || "", apicall: true}); e.preventDefault()}} >
             <textarea value={this.state.localprompt} onChange={e => this.setState({localprompt: e.target.value})} />
             <br/>
-            <input type="submit" value="continue on the prompt, in two different styles" />
-          </form><br/><hr/><br/>
+            <input type="submit" value="elaborate, à la Lorde/Rand" />
+          </form>
           {
-            this.state.apicall ? (<div class="prompt">Audre Lorde:<br/><iframe src={apicall({prompt: this.state.prompt, code: 0})} /><hr/>Ayn Rand:<br/><iframe src={apicall({prompt: this.state.prompt, code: 1})} /></div>) : ""
+            this.state.apicall ? (<div className="prompt">à la Audre Lorde:<br/><iframe title="lorde" src={apicall({prompt: this.state.prompt, code: 0})} /><hr/>à la Ayn Rand:<br/><iframe title="rand" src={apicall({prompt: this.state.prompt, code: 1})} /></div>) : ""
           }
         </header>
       </div>
