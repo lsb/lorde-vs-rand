@@ -1,32 +1,17 @@
 .App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: beige;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: brown;
-  font-size: 0.5in;
-}
-
-textarea, input {
+  text-align: left;
+  min-width: 1in;
+  max-width: 50%;
+  margin: auto;
   font-size: 0.25in;
-  width: 100%
 }
 
-form, .prompt {
-  min-width: 4in;
-  max-width: 75%;
+.lorde, .rand { white-space:pre-line }
+
+.selectbox {
+  padding-bottom: 1in;
 }
 
-iframe {
-  width: 100%;
-}
-
-.prompt {
-  margin-top: 1em;
+.lorde {
+  padding-bottom: 0.5in;
 }
